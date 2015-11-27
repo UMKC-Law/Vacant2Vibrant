@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/zmon/red-tape.png?label=ready&title=Ready)](https://waffle.io/zmon/red-tape)
 ## Waffle.io Hackshop
 
 [![Stories Ready to Work On](https://badge.waffle.io/zmon/red-tape.svg?label=ready&title=Cards%20Ready%20To%20Work%20On)](https://waffle.io/zmon/red-tape)
