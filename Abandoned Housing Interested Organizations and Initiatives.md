@@ -13,8 +13,9 @@
   *	City Planning
   *	Neighborhoods & Housing Services
     * John Wood
+    * Dangerous Buildings - Dalena Taylor
   *	Office of the Mayor
-    * McClain Bryant
+    * McClain Bryant (policy)
 *	Kansas City Health Department
   * Interested party due to health concerns surrounding vacant property
   * Possible data point
@@ -23,21 +24,27 @@
 *	KC NAC – Neighborhood Advisory Council
 *	LAWMO 
   *	Adopt-a-neighborhood initiative (get list of law firms assigned to each neighborhood); Becca McQuillen
-     * Intrested party bec
+     * Working with private law firms to quiet title; neighborhoods involved are each assigned to a different law firm.
   * Economic Development Unit; Peter Hoffman
+   * Mostly Abandoned Housing Act (neighborhood associations/non-profits) and nuisance claims (private individuals)
+   * Beneficiary Deeds 
 *	HUD
-  *Kevin Muesenfechter, General Counsel
+  * Kevin Muesenfechter, General Counsel
 *	Urban Neighborhood Initiative (Vacant to Vibrant)
-  *Deborah Craig
+  * Deborah Craig
 *	Habitat for Humanity-Kansas City
-  *Lindsay Hicks, Development and Outreach Director
+  * Lindsay Hicks, Development and Outreach Director
 *	Land Trust of Jackson County
 *	Mid-America Regional Council
+  * Collect data on several issues
+  * Potentially interested due to environmental issues surrounding abandoned property
+  * Associated with green impact zone
 *	Private Developers
   *	Veterans Community Project (project interested)
   *	Home Contained
-  *	Crispus Attucks Project (Possibly)
+  *	Tiny House Collective
 *	KC Economic Development Corporation
+ * Potential interested party regarding future development.
 *	Blue Hills Community Services (CDC)
   * Acquires property on behalf of future homeowners and completes repairs.
 *	Ivanhoe Neighborhood Council (CDC)
@@ -63,11 +70,15 @@
   *	Washington Wheatley
   *	Wendell Phillips Neighborhood Association
 *	Black Economic Union of Greater Kansas City
+ * 18th and Vine
 *	Hispanic Economic Development Corporation
   *	Want to establish a CID
 *	NeighborWorks America
+ * National program
 *	Community Housing of Wyandotte County (KS) (CHWC, Inc.)
+ * Extending past KCMO/Jackson County
 *	CCP – Center for Community Progress
+ * National program
 *	UMKC Quiet Title Clinic
   * David White
 * UMKC School of Urban Design
@@ -77,9 +88,19 @@
   * Interested in: creating or showing the value of green space in the context of vacant lots, for multiple uses. This could be a map showing connectivity of green spaces. She indicated that users would be The Heartland Conservancy, Parks Department, and neighborhoods.
 *	Green Impact Zone
   * Works with Blue Hills Community Services, Ivanhoe Neighborhood Council, Habitat for Humanity of Kansas City, Neighborhood Housing Services
+  * MARC
 *	Local Initiative Support Corporation (LISC)
 *	Land Clearance for Redevelopment Authority (LCRA)
 *	Additional Data points:
   *	Water Services
+   * Information on whether structure is vacant
+   * Privacy issues
   *	Jackson County Property Tax Assessor
-  *	KC Open Data (dangerous buildings, nuisance, etc.)
+   * Property taxes (element for legally vacant)
+   * Legal Description
+   * Owners
+  *	KC Open Data
+   * Dangerous building score
+   * Properties registered as vacant
+   * Nuisance violations
+   * Registered rental properties
