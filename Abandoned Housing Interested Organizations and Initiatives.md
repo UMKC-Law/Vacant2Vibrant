@@ -4,7 +4,7 @@
   * Source of vacant structures and lots; able to sell properties
   * Large inventory
 *	KCMHA
-  *Ted Anderson, President
+  * Ted Anderson, President
   * Michael Patillo, Operations Manager
   * Source of vacant structures and lots; accepts donations depending on title issues and condition
   * Smaller inventory, around 20
