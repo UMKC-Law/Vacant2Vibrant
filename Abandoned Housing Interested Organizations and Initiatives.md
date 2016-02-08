@@ -70,7 +70,11 @@
 *	CCP – Center for Community Progress
 *	UMKC Quiet Title Clinic
   * David White
-*	UMKC Bloch School – Urban Planning
+* UMKC School of Urban Design
+  * Jake Wagner
+* Middle Blue River Urban Waters Federal Partnership & EPA Region 7
+  * Roberta Vogel-Leutung
+  * Interested in: creating or showing the value of green space in the context of vacant lots, for multiple uses. This could be a map showing connectivity of green spaces. She indicated that users would be The Heartland Conservancy, Parks Department, and neighborhoods.
 *	Green Impact Zone
   * Works with Blue Hills Community Services, Ivanhoe Neighborhood Council, Habitat for Humanity of Kansas City, Neighborhood Housing Services
 *	Local Initiative Support Corporation (LISC)
