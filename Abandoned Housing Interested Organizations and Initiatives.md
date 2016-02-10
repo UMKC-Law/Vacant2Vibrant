@@ -99,6 +99,7 @@
    * Property taxes (element for legally vacant)
    * Legal Description
    * Owners
+* Vacant Lot Task Force
   *	KC Open Data
    * Dangerous building score
    * Properties registered as vacant
