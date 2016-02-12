@@ -1,3 +1,6 @@
+---
+layout: default
+---
 *	Land Bank
   * Ted Anderson, Executive Director
   * Michael Patillo, Operations Manager
