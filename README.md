@@ -1,6 +1,6 @@
 
 
-[![Things Ready to Work On](https://badge.waffle.io/zmon/red-tape.svg?label=ready&title=Cards%20Ready%20To%20Work%20On)](https://waffle.io/zmon/red-tape)
+[![Stories in Ready](https://badge.waffle.io/codeforkansascity/Vacant2Vibrant.svg?label=ready&title=Ready)](http://waffle.io/codeforkansascity/Vacant2Vibrant)
 
 PROBLEM
 =======
