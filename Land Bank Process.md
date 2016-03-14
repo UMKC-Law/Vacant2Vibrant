@@ -1,10 +1,10 @@
 1.	BEFORE you apply, figure out if you could pass background check (currently being revised)
-  a.	No felonies for 10 years
-  b.	Drug charges
-  c.	Prostitution
-  d.	Sex offender
-  e.	Owing assessments or delinquent taxes
-  f.	Lost the property in the tax sale
+  *a.	No felonies for 10 years
+  *b.	Drug charges
+  *c.	Prostitution
+  *d.	Sex offender
+  *e.	Owing assessments or delinquent taxes
+  *f.	Lost the property in the tax sale
 2.	Identify the property.
   a.	Go to www.kcmo.landbank.com
   b.	Search for properties (hit enter, and all properties will show up on the map)
