@@ -7,7 +7,7 @@ Glossary
 
 Land Bank - sample
 
-: You can purchase or leased, Houses, Buldings, Side Lots, Vacant Lots & land,  or even adopt properties from the Land Bank.  You will need a plan and beable to sho that you have the availability of resources to complete the project.  [More information about Land Bank Properties]
+: You can purchase or leased, This is *red*{: style="color: red"}. Houses, Buldings, Side Lots, Vacant Lots & land,  or even adopt properties from the Land Bank.  You will need a plan and beable to sho that you have the availability of resources to complete the project.  [More information about Land Bank Properties]
 
 
 Homestead - sample
