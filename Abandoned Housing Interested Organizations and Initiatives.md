@@ -2,8 +2,8 @@
 layout: default
 ---
 
-* Land Bank
-  * Ted Anderson, Executive Director
+* Land Bank 
+  * Ted Anderson, This is red{: style="color: red"} Executive Director
   * Michael Patillo, Operations Manager
   * Source of vacant structures and lots; able to sell properties
   * Large inventory
