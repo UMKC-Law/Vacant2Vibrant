@@ -10,7 +10,7 @@
   * Go to www.kcmo.landbank.com
   * Search for properties (hit enter, and all properties will show up on the map)
   * Vacant lots (except for side lots) and structures will need to be approved by the board. 
-  * Side lots (next to your residence (own and occupy) and less than 2,500 square feet) are approved by the staff and do not have a deed of trust)
+  * Side lots (next to your residence (own and occupy) and less than 2,500 square feet) are approved by the staff and do not have a deed of trust
 3.	Contact the Land Bank to schedule a time to view the property with the inspector.
   * Because these buildings are often in poor condition due to being vacant for several years, you will be asked to sign an entry waiver.
   * The inspector is not doing an in-depth analysis of the property, but is looking for the obvious repairs.
