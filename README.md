@@ -2,6 +2,13 @@
 
 [![Stories in Ready](https://badge.waffle.io/codeforkansascity/Vacant2Vibrant.svg?label=ready&title=Ready)](http://waffle.io/codeforkansascity/Vacant2Vibrant)
 
+GOALS
+======
+
+1. Asset Mapping - Cataloging the various resources/efforts in our community related to the abandoned housing issue and the data that is being collected and shared. 
+
+2. Acquiring vacant properties - Create a guided map for the acquisition of vacant properties.  
+
 PROBLEM
 =======
 
