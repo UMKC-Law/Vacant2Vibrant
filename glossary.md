@@ -38,12 +38,12 @@ Nuisance
 
 Special Warranty Deeds
 
-: TBD
+: With a Special Warranty Deed, 
 
 
-Quit Claim Deed
+Quitclaim Deed
 
-: TBD
+: A quit claim deed conveys the property "as is," making no guarantees.
 
 
  RSMO 447.620 - Definitions
