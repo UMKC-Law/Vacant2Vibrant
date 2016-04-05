@@ -6,6 +6,7 @@ Goal: Put property in productive Use
 
 Origin
    All stakeholders were invited to a big inititive and five major issues came from this:
+   
      1. Vacant Lots
      
      2. Vacant Houses
@@ -25,6 +26,8 @@ Problem: Development in blighted areas is very hard for small mom and pop landlo
      - Acquisition
      - Financing
      - Rehabilitation
+
+---
 
 Long-Term Solution: Create a central source of information to walk people through the biggest problems: taxes, title issues, assessments.
   - Create a hub of information to walk developers through this process from acquisition to rehabilitation, making icentives more accessible to 
