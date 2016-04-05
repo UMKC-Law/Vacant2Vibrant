@@ -4,14 +4,14 @@ Interview: UNI Red Tape Committee: Peter Hoffman
 
 Goal: Put property in productive Use
 
-: Origin:
-  : All stakeholders were invited to a big inititive and five major issues came from this:
-    : 1. Vacant Lots
-    : 2. Vacant Houses
-    : 3. Government Red Tape
-    : 4. Clearing Title
-    : 5. Financing
-   : Since this, the groups have been meeting every two weeks.
+Origin
+   All stakeholders were invited to a big inititive and five major issues came from this:
+     1. Vacant Lots
+     2. Vacant Houses
+     3. Government Red Tape
+     4. Clearing Title
+     5. Financing
+   - Since this, the groups have been meeting every two weeks.
 
 ---
 
