@@ -18,14 +18,15 @@ Committee Members:
   - BcClain Bryant, City of Kansas City, Missouri, Office of the Mayor
   
   - Ed Linnebur, LISC
----  
+
+--  
 Problems:
   - Courts and title companies have different standards of proper notice (e.g., is a certified letter from the county enough notice to lien holders?)
   - The current presumption of title companies is that the parties did not receive notice.
   - Another issue is that the notice statute has not been updated since the 1940s.
   - "Mennonite notice" became the practice of Missouri courts in the 1980s
 
----
+--
 Possible solutions:
   - Could change the tax foreclosure statute to require Mennonite notice
    -  Requires certain things if green cards haven't been signed (evidence that the party has received notice)
