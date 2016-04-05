@@ -1,9 +1,9 @@
 Interview: UNI Clearing Title Committe Co-Chair: Ted Anderson
----
+=====
 
 The Clearing Title Committee's goal is to make tax titles in Kansas City, Jackson County, Missouri insurable.
 
----
+--
 
 Committee Members:
 
