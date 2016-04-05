@@ -24,6 +24,7 @@ Problems:
   - The current presumption of title companies is that the parties did not receive notice.
   - Another issue is that the notice statute has not been updated since the 1940s.
   - "Mennonite notice" became the practice of Missouri courts in the 1980s
+
 ---
 Possible solutions:
   - Could change the tax foreclosure statute to require Mennonite notice
