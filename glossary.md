@@ -54,7 +54,32 @@ County
 
 Dwelling Unit
 
-: 
+: A structure used for occupancy as a place of abode, occupied or vacant
+
+
+Housing Code
+
+: Ordinance contaning an enforceable standard to regulate the condition of buidlings
+
+
+Local Housing Corporation
+
+: A non-for-profit corporation whose purpose it is to promoting housing development and conservation in a community
+
+
+Municipality
+
+: Any incorporated city, town, or village
+
+
+Neightborhood Association
+
+: any group purposed to improve a boundried area in a community
+
+
+Notice of Deficiency
+
+: A notice issued by a code-enforcement agency of a code violation requiring an act to eliminate the deficiency
 
 
 Up To Code
