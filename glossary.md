@@ -99,7 +99,7 @@ Nuisance
 
 Special Warranty Deeds
 
-: With a Special Warranty Deed, 
+: With a Special Warranty Deed, the owner guarantees the quality of title only since its acquisition. For example, the Land Bank can guarantee that it did not acquire any liens or encumbrances on the property during its ownership term, but cannot make any guarantees regarding encumbrances prior to the tax sale.
 
 
 Quitclaim Deed
@@ -117,12 +117,12 @@ Quitclaim Deed
  
  Marital Status
  
- : TBD, explain 
+ : Only married or single; if you are legally separated, you are still considered married.
  
  
  Land Lock
  
- : TBD
+ : The property cannot be accessed by a public street or water.
  
  
  Title Insurance
@@ -133,7 +133,7 @@ Quitclaim Deed
 
  
  Tax Lien
- : TBD
+ : Either federal or state, a tax lien attaches to all property owned by the individual with a tax lien. It expires 10 years after filing, or can be discharged through payment.
  
  Encumbered or Clouded Title
  
@@ -142,13 +142,13 @@ Quitclaim Deed
  
  
  Judgement Lien
- 
+ : 
 
-Legal Description v Property Description
+Legal Description (Property Description)
+: this is how the property is identified specifically. (ADD MORE)
 
-
-Parcel Number
-
+Parcel Number (Assessor Parcel Number or APN)
+: An identification number assigned to a plot of land by a county tax assessor. Parcel numbers can change when properties are merged and divided.
 
 Survey
 
