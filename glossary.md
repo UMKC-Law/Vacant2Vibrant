@@ -60,6 +60,7 @@ Gentrification
 
 : The improvement of a property that increases its value to be of comparable value to its relative area where it was previously of less comparable value
 
+
 Homestead
 
 : Donec quis nulla nisi. Phasellus lacus libero, tincidunt accumsan sagittis id, faucibus et erat. Nullam varius eleifend lacus nec dictum. Sed facilisis augue ut odio volutpat, id vehicula felis mattis. Etiam vehicula, metus a iaculis consequat, elit quam fermentum ante, non bibendum risus enim et sapien
@@ -93,6 +94,7 @@ Local Housing Corporation
 Marital Status
 
 : Only married or single; if you are legally separated, you are still considered married
+
 
 Mechanics Lien
 
@@ -134,7 +136,6 @@ Person
 : An individual, corporation, association, partnership or other legal entity
  
 
-
 Quitclaim Deed
 
 : A quit claim deed conveys the property "as is," making no guarantees
@@ -155,10 +156,14 @@ Title Insurance
 
 
 Legal Description (Property Description)
+
 : This is how the property is identified specifically. (ADD MORE)
 
+
 Parcel Number (Assessor Parcel Number or APN)
+
 : An identification number assigned to a plot of land by a county tax assessor. Parcel numbers can change when properties are merged and divided
+
 
 Survey
 
