@@ -94,7 +94,7 @@ Gentrification
 
 Nuisance
 
-: TBD
+: A cde violation that a threat to public health, safety or welfare
 
 
 Special Warranty Deeds
@@ -107,8 +107,19 @@ Quitclaim Deed
 : A quit claim deed conveys the property "as is," making no guarantees.
 
 
- RSMO 447.620 - Definitions
- 
+Occupant
+
+: a person who lawfully occupies a dwelling
+
+
+Owner
+
+: Owner of record or controlling party by way of benefits such as: mortgagee, vendee in possiession, assignee of rents, receiver, personal represenative, trustee, lesssee, agent, or any other person in control of dwelling unit
+
+
+Person
+
+: an individual, corporation, association, partnership or other legal entity 
  
  Deed of Trust:
  
