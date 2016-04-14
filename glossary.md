@@ -65,7 +65,7 @@ Judgement Lien
 
 
 Land Bank
-: You can purchase or leased, Houses, Buildings, Side Lots, Vacant Lots & land, or even adopt properties from the Land Bank.  You will need a plan and be able to show that you have the availability of resources to complete the project.  [More information about Land Bank Properties] (http://www.kcmolandbank.org/)
+: You can purchase or leased, Houses, Buildings, Side Lots, Vacant Lots & land, or even adopt properties from the Land Bank.  You will need a plan and be able to show that you have the availability of resources to complete the project.  [More information about Land Bank Properties](http://www.kcmolandbank.org/)
 
 
 Land Lock
