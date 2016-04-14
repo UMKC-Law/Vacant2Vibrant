@@ -6,24 +6,26 @@ Glossary
 ========
 
 Abandoned 
-: Vacant for six (6) months, delinquent property taxes and open code violations
-[link to Jackson county tax] (https://ascendweb.jacksongov.org/ascend/(0qn1xh555qfhdz45ae5wev55)/search.aspx)
+: Vacant for six (6) months, delinquent property taxes and open code violations [link to Jackson county tax](https://ascendweb.jacksongov.org/ascend/(0qn1xh555qfhdz45ae5wev55)/search.aspx)
+
 
 
 Abatement
 : Action by way of correction or securing of a structure based on building code violations
 
 
+
 Agent
 : A person authorized to act for another person
 
 
+
 Clear or Clean Title
-:    A legal title to property that has no known encumbrances based on a best practice standard of investigation
+: A legal title to property that has no known encumbrances based on a best practice standard of investigation
 
 
 Code-enforcement Agency
-    : Agency that has been delegated authority to enforce code violations
+: Agency that has been delegated authority to enforce code violations
 
 
 Community
@@ -83,47 +85,38 @@ Mechanics Lien
 
 
 Municipality
-
 : Any incorporated city, town, or village
 
 
 Neighborhood Association
-
 : Any group purposed to improve a boundaried area in a community
 
 
 Notice of Deficiency
-
 : A notice issued by a code-enforcement agency of a code violation requiring an act to eliminate the deficiency
 
 
 Nuisance
-
 : A code violation that a threat to public health, safety or welfare
 
 
 Occupant
-
 : A person who lawfully occupies a dwelling
 
 
 Owner
-
 : Owner of record or controlling party by way of benefits such as: mortgagee, vendee in possession, assignee of rents, receiver, personal representative, trustee, lessee, agent, or any other person in control of dwelling unit
 
 
 Person
-
 : An individual, corporation, association, partnership or other legal entity
  
 
 Quitclaim Deed
-
 : A quit claim deed conveys the property "as is," making no guarantees
 
 
 Special Warranty Deeds
-
 : With a Special Warranty Deed, the owner guarantees the quality of title only since its acquisition. For example, the Land Bank can guarantee that it did not acquire any liens or encumbrances on the property during its ownership term, but cannot make any guarantees regarding encumbrances prior to the tax sale
 
 
@@ -132,26 +125,21 @@ Tax Lien
 
 
 Title Insurance
-
 : Insurance against property title defects
 
 
 Legal Description (Property Description)
-
 : This is how the property is identified specifically. (ADD MORE)
 
 
 Parcel Number (Assessor Parcel Number or APN)
-
 : An identification number assigned to a plot of land by a county tax assessor. Parcel numbers can change when properties are merged and divided
 
 
 Survey
-
 : An inspection of the real property that is usually of a credible nature that provides some assurance to a relative standard
 
 
 Up To Code
-
 : In compliance with the ordinances of the municipality in that no violations will be assessed against its owner
 
