@@ -17,8 +17,8 @@ angular.module('fifaApp')
             var self = this;
             self.teams = [];
 
-            FifaService.getTeams().then(function (resp) {
-                self.teams = resp.data;
+            FifaService.getTeams(function (resp) {
+                self.teams = resp;
             });
         }])
 
