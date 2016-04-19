@@ -1,0 +1,37 @@
+{
+  "name": "angular-tabletop",
+  "version": "0.2.2",
+  "authors": [
+    "Ændrew Rininsland <aendrew@aendrew.com>"
+  ],
+  "description": "An AngularJS provider allowing easy resolution of Tabletop data via promises.",
+  "main": "TabletopProvider.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "tabletop",
+    "tabletopjs"
+  ],
+  "license": "MIT",
+  "homepage": "http://times.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tabletop": "~1.4.0"
+  },
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "eeb12b03ca5be4902cf61c7fc315466826001f9e"
+  },
+  "_source": "https://github.com/times/angular-tabletop.git",
+  "_target": "~0.2.2",
+  "_originalSource": "angular-tabletop",
+  "_direct": true
+}
