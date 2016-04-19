@@ -1,0 +1,32 @@
+{
+  "name": "tabletop",
+  "version": "1.3.5",
+  "homepage": "https://github.com/jsoma/tabletop",
+  "authors": [
+    "\"\""
+  ],
+  "description": "**Tabletop.js** takes a Google Spreadsheet and makes it easily accessible through JavaScript. With zero dependencies!",
+  "main": "src/tabletop.js",
+  "keywords": [
+    "table",
+    "sql",
+    "spreadsheet"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.3.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.3.5",
+    "commit": "8e1a31e01878ce4dbaad774a3f14f7fd7e943035"
+  },
+  "_source": "https://github.com/jsoma/tabletop.git",
+  "_target": "~1.3.3",
+  "_originalSource": "tabletop"
+}
