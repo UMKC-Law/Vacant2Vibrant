@@ -1,9 +1,11 @@
 .landing {
     background-image: url("http://img.fifa.com/mm/photo/tournament/loc/02/31/42/51/2314251_big-lnd.jpg");
 }
+
 body {
     padding-bottom: 20px;
 }
+
 .top-bar {
     background-color: antiquewhite;
     height: 60px;
@@ -34,10 +36,12 @@ body {
     box-shadow: 2px 2px 2px 2px #f5f5f5;
 
 }
+
 .login-card {
     width: 80%;
     margin: auto;
 }
+
 .login-form {
     padding: 10%;
 }
@@ -106,7 +110,7 @@ body {
     font-weight: bolder;
 }
 
-.team-details-container .label{
+.team-details-container .label {
     color: firebrick;
     font-size: 25px;
     text-decoration: underline;
