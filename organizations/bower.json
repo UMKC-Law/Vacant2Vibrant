@@ -1,0 +1,17 @@
+{
+  "name": "angular-spreadsheet-sample",
+  "version": "0.1.0",
+  "authors": [
+    "Amo Wu <amo260@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tabletop": "~1.3.3"
+  }
+}

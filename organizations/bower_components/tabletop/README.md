@@ -120,12 +120,6 @@ You pass in either `key` as the actual spreadsheet key, or just the full publish
 
 `callbackContext` sets the `this` for your callback. It's the tabletop object by default.
 
-`prettyColumnNames` can be true or false (default to true, unless `proxy` is enabled**). Since Google doesn't pass us exactly the same column names as in the header ('$ Processed' becomes 'processed'), it takes an extra request to correct them. If you don't want the extra request, you'll want to set it to `false`
-
-> See the **unfriendly_headers** example for more info. Only works for newer Google Sheets.
-
-> ** prettyColumnNames doesn't work with [Flatware](https://github.com/jsoma/flatware), is why we disable it with a proxy by default
-
 ### Tabletop itself
 
 Once you've initialized a `tabletop` object you can access its good parts.
@@ -134,9 +128,7 @@ Once you've initialized a `tabletop` object you can access its good parts.
 
 `.sheets(name)` is how you access a specific sheet. Say I have a worksheet called **Cats I Know**, I'll access it via `tabletop.sheets("Cats I Know")`
 
-`.model_names` are the names of the models [read: sheets] that Tabletop knows about. The sheet names do *not* reflect their ordering in the original spreadsheet.
-
-`.foundSheetNames` are the names of the sheets [read: models] that Tabletop knows about. Their order reflects the sheets' order in the original spreadsheet.
+`.model_names` are the names of the models [read: sheets] that Tabletop knows about
 
 `.data()` returns the rows of the first model if you're in simpleSheet mode. It's the same as `.sheets()` otherwise. This is just a little sugar.
 
@@ -151,10 +143,6 @@ Tabletop.Model is pretty boring, let's be honest.
 `.name` is the name of the worksheet it came from (the tab at the bottom of the spreadsheet)
 
 `.column_names` gives you the names of the columns in that table
-
-`.original_columns` gives you the names of the columns that Google sends on the first pass (numbers stripped, lowercase, etc)
-
-`.pretty_columns` gives you the mapping between the column headers in the spreadsheet and the and the `column_names`. Disabled by passing `prettyColumnNames: false` when initializing Tabletop.
 
 `.all()` returns an array of the rows of the table, in the style of `[ { name: "Tom", age: 5}, { name: "Liz", age: 12 } ]`
 
@@ -173,12 +161,6 @@ Super easy. Just feed the models to Handlebars and you're all set to build the t
 I've put together a Backbone.tabletopSync driver for Backbone collections and models. It's read-only, but you can't really complain if you're powering your Backbone app through Google Spreadsheets.
 
 Source is, of course, in `/src`, and you can check it out in action in `/examples/backbone/`
-
-### Working with Tabletop and AngularJS
-
-[Ændrew Rininsland (@aendrew)](http://www.github.com/aendrew) at [The Times and Sunday Times](http://www.github.com/times) has created a module that makes using Tabletop with [AngularJS](http://www.angularjs.org) extremely easy. It also includes a loader for  [angular-translate](https://angular-translate.github.io) that gives Tabletop the ability to provide i18n translation strings.
-
-Please see [times/angular-tabletop](http://www.github.com/times/angular-tabletop) for more details.
 
 ### Working with Tabletop and TimelineSetter
 
