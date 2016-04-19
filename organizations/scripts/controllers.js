@@ -63,6 +63,7 @@ angular.module('fifaApp')
           .then(function(resp){
         self.team = resp.data;
       }, function(error){
-        $location.path('/login');
+
+        alert('err');
       });
     }]);
