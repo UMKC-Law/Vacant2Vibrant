@@ -43,5 +43,6 @@ angular.module('fifaApp')
                 self.team = {};
                 data = FifaService.getTeamDetails($routeParams.code);
                 console.dir( data);
+                self.team = data;
 
             }]);
