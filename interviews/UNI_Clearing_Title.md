@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Interview: UNI Clearing Title Committe Co-Chair: Ted Anderson
 =====
 
