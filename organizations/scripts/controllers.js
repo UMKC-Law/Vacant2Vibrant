@@ -41,10 +41,7 @@ angular.module('fifaApp')
             function ($location, $routeParams, FifaService) {
                 var self = this;
                 self.team = {};
-                FifaService.getTeamDetails($routeParams.code)
-                    .then(function (resp) {
-                        self.team = resp.data;
-                    }, function (error) {
-                        $location.path('/login');
-                    });
+                data = FifaService.getTeamDetails($routeParams.code);
+                console.dir( data);
+
             }]);
