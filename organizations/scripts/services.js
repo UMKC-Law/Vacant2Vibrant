@@ -13,14 +13,19 @@ angular.module('fifaApp')
                         callback: function (data, tabletop) {
                             if (callback && typeof(callback) === "function") {
                                 $rootScope.$apply(function () {
-                                    orgs = [];
+
                                     for(var i=0; i < data.length; i++) {
+
                                         if ( data[i].organization.length > 0 ) {
+                                            console.log( 'aa ' + data[i].linktogithubinterview.length + ' - ' + data[i].linktogithubinterview);
+
                                             organizations[i] = data[i];
                                             organizations[i].id = i;
+                                            organizations[i].show_interview = data[i].linktogithubinterview.length;
                                         }
-
                                     }
+
+                                    console.dir(organizations);
                                     callback(organizations);
                                 });
                             }
