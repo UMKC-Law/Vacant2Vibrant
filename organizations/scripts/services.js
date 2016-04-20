@@ -13,12 +13,12 @@ angular.module('fifaApp')
                         callback: function (data, tabletop) {
                             if (callback && typeof(callback) === "function") {
                                 $rootScope.$apply(function () {
+                                    orgs = [];
                                     for(var i=0; i < data.length; i++) {
-                                        organizations[i] = {};
-                                        organizations[i].rank = 10;
-                                        organizations[i].flagURL = '';
-                                        organizations[i].name = data[i].name;
-                                        organizations[i].id = i;
+                                        if ( data[i].organization.length > 0 ) {
+                                            organizations[i] = data[i];
+                                            organizations[i].id = i;
+                                        }
 
                                     }
                                     callback(organizations);

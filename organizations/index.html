@@ -1,27 +1,107 @@
 <!-- File: chapter10/routing-example/app/index.html -->
 <html>
-<head>
-    <title>FIFA Teams</title>
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body ng-app="fifaApp" class="landing">
-<div class="top-bar" ng-controller="MainCtrl as mainCtrl">
-    <div class="pull-left">
-        <span><a href="#/">FIFA TEAMS</a></span>   <a href="/organizations">XXXX</a>
-    </div>
-    <div class="pull-right">
-      <span ng-hide="mainCtrl.userService.isLoggedIn">
-        <a href="#/login">Login</a>
-      </span>
-      <span ng-show="mainCtrl.userService.isLoggedIn">
-        <!-- server-side route, not a client-side route -->
-        <a href="/api/logout">Logout</a>
-      </span>
-    </div>
-</div>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
 
-<div ng-view></div>
+<title>Asset Mapper</title>
+
+<!-- Bootstrap core CSS -->
+<link href="styles/bootstrap.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="styles/starter-template.css" rel="stylesheet">
+
+<style>
+    .hangingindent {
+        padding-left: 22px;
+        text-indent: -22px;
+    }
+</style>
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]>
+<script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="scripts/vendors/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body ng-app="fifaApp">
+<header class="site-header">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="font-size: 14pt; font-weight: bolder" href="/organizations">Asset
+                    Mapper</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/index.html">How to Acquir</a></li>
+                <li><a href="/organization-list.html">Google Spreadsheet</a></li>
+                <li><a href="/glossary.html">Glossary</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul><!--/.nav-collapse -->
+        </div>
+    </nav>
+</header>
+
+
+<div ng-view style="padding-top: 15px; padding-bottom: 10px;"></div>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 foot">
+                <h4>How to Aquire</h4>
+                <ul class="">
+                    <li><a href="#">Land Bank</a></li>
+                    <li><a href="#">Home Stead</a></li>
+                    <li><a href="#">Other Goverment</a></li>
+                    <li><a href="#">Private Owners</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-sm-6 foot">
+                <h4>Contributers</h4>
+
+
+                <ul class="">
+                    <li><a href="#">UMKC School of Law, Law, Technology and Public Policy class</a><br></li>
+                    <li><a href="#">Code for Kansas City</a></li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-3 foot">
+                <h4>Contact</h4>
+                <p>Email</p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <script src="scripts/vendors/jquery-1.11.1.js"></script>
 <script src="scripts/vendors/angular.js"></script>
@@ -31,5 +111,7 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/services.js"></script>
 <script src="scripts/controllers.js"></script>
+
+<script src="scripts/vendors/bootstrap.js"></script>
 </body>
 </html>
