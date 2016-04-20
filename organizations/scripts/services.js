@@ -2,7 +2,9 @@
 angular.module('fifaApp')
     .factory('FifaService', ['$rootScope',
         function ($rootScope) {
+            var organizations = [];
             return {
+
                 getTeams: function (callback) {
                     Tabletop.init({
                         key: '0AhPhtlCrkuIFdEQ0TzNsSUl0QmFMdmU3QUcxRlhJV1E',
@@ -11,6 +13,7 @@ angular.module('fifaApp')
                         callback: function (data, tabletop) {
                             if (callback && typeof(callback) === "function") {
                                 $rootScope.$apply(function () {
+                                    organizations = data;
                                     callback(data);
                                 });
                             }
@@ -18,7 +21,9 @@ angular.module('fifaApp')
                     });
                 },
                 getTeamDetails: function (code) {
-                    return $http.get('/api/team/' + code);
+
+                    return organizations[code];
+                    // return $http.get('/api/team/' + code);
                 }
             }
         }])
