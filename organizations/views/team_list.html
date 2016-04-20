@@ -1,7 +1,10 @@
 <!-- File: chapter10/routing-example/app/views/teams_list.html -->
 <div class="team-list-container">
+    Search: <input type="text" placeholder="search term" ng-model="searchText" />
+    <br />
+    <br />
     <div class="team"
-         ng-repeat="team in teamListCtrl.teams | orderBy: 'rank'">
+         ng-repeat="team in teamListCtrl.teams | searchOrgs:searchText | orderBy: 'rank'">
         <div class="team-info row">
             <div class="col-lg-1 rank">
                 <span ng-bind="team.rank"></span>

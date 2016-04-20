@@ -22,6 +22,37 @@ angular.module('fifaApp')
             });
         }])
 
+    .filter('searchOrgs', function() {
+
+        // Create the return function and set the required parameter as well as an optional paramater
+        return function(input, str) {
+
+
+
+            if ( str == undefined ) {           // If there is not input
+                return input;
+            }
+
+            console.log(str);
+            var out = [];
+
+            var regex = new RegExp( str , "i");
+
+            var lowerStr = str.toLowerCase();
+
+            // Using the angular.forEach method, go through the array of data and perform the operation of figuring out if the language is statically or dynamically typed.
+            angular.forEach(input, function (org) {
+                if ( org.name.toLowerCase().indexOf(lowerStr) != -1) {
+                    out.push(org)
+                }
+
+            });
+
+            return out;
+        }
+
+    })
+
     .controller('LoginCtrl', ['UserService', '$location',
         function (UserService, $location) {
             var self = this;
@@ -46,3 +77,4 @@ angular.module('fifaApp')
                 self.team = data;
 
             }]);
+
