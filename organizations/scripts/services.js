@@ -7,7 +7,7 @@ angular.module('fifaApp')
 
                 getTeams: function (callback) {
                     Tabletop.init({
-                        key: '0AhPhtlCrkuIFdEQ0TzNsSUl0QmFMdmU3QUcxRlhJV1E',
+                        key: '11AnLJIvae8DJRgaMZ9mkJjsN9RbR8gFyOK185821yc4',
                         simpleSheet: true,
                         parseNumbers: true,
                         callback: function (data, tabletop) {
