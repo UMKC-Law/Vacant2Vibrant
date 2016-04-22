@@ -16,7 +16,6 @@ custom_js:
                 <tr>
                     <th>Term</th>
                     <th>Description</th>
-                    <th>Links</th>
                 </tr>
                 </thead>
                 <tbody>
