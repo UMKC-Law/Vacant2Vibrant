@@ -7,7 +7,7 @@ angular.module('fifaApp')
 
                 getTeams: function (callback) {
                     Tabletop.init({
-                        key: '11AnLJIvae8DJRgaMZ9mkJjsN9RbR8gFyOK185821yc4',
+                        key: '1g6GIToW1Mhq83zVW4nJe4Y573v5MJOztqn3qvjwWX7s',
                         simpleSheet: true,
                         parseNumbers: true,
                         callback: function (data, tabletop) {
@@ -16,16 +16,13 @@ angular.module('fifaApp')
 
                                     for(var i=0; i < data.length; i++) {
 
-                                        if ( data[i].organization.length > 0 ) {
-                                            console.log( 'aa ' + data[i].linktogithubinterview.length + ' - ' + data[i].linktogithubinterview);
+                                        if ( data[i].organizationname.length > 0 ) {
 
                                             organizations[i] = data[i];
                                             organizations[i].id = i;
-                                            organizations[i].show_interview = data[i].linktogithubinterview.length;
                                         }
                                     }
 
-                                    console.dir(organizations);
                                     callback(organizations);
                                 });
                             }

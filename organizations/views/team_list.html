@@ -15,17 +15,17 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organization'">
-                    <td><p class="hangingindent"><b>{{org.organization}}:</b> {{org.whatdotheydo}}</p></td>
+                <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organizationname'">
+                    <td><p class="hangingindent"><b>{{org.organizationname}}:</b> {{org.whatdotheydo}}</p></td>
                     <td>{{org.status}}</td>
                     <td>
-                        <a title="{{org.organization}}"
+                        <a title="{{org.organizationname}}"
                            ng-href="#/team/{{org.id}}">
                             <span class="glyphicon glyphicon-info-sign"></span></a>
 
                         <span ng-if="org.show_interview > 0">
                             &nbsp;&nbsp;
-                            <a title="Interview with {{org.name}} or {{org.organization}}"
+                            <a title="Interview with {{org.name}} or {{org.organizationname}}"
                            ng-href="/interviews/{{org.linktogithubinterview}}"><span
                                 class="glyphicon glyphicon-open-file"></span></a>
                         </span>

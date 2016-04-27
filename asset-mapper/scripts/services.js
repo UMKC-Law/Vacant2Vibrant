@@ -2,7 +2,7 @@
 angular.module('fifaApp')
     .factory('FifaService', ['$rootScope',
         function ($rootScope) {
-            var organizations = [];
+            var assets = [];
             return {
 
                 getTeams: function (callback) {
@@ -19,14 +19,14 @@ angular.module('fifaApp')
                                         if ( data[i].organization.length > 0 ) {
                                             console.log( 'aa ' + data[i].linktogithubinterview.length + ' - ' + data[i].linktogithubinterview);
 
-                                            organizations[i] = data[i];
-                                            organizations[i].id = i;
-                                            organizations[i].show_interview = data[i].linktogithubinterview.length;
+                                            assets[i] = data[i];
+                                            assets[i].id = i;
+                                            assets[i].show_interview = data[i].linktogithubinterview.length;
                                         }
                                     }
 
-                                    console.dir(organizations);
-                                    callback(organizations);
+                                    console.dir(assets);
+                                    callback(assets);
                                 });
                             }
                         }
@@ -34,7 +34,7 @@ angular.module('fifaApp')
                 },
                 getTeamDetails: function (code) {
 
-                    return organizations[code];
+                    return assets[code];
                     // return $http.get('/api/team/' + code);
                 }
             }
