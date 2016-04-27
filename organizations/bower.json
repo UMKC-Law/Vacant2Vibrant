@@ -1,0 +1,17 @@
+{
+  "name": "v2v Organization Inventory",
+  "version": "0.1.0",
+  "authors": [
+    "Paul Barham paulb@savagesoft.com"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tabletop": "~1.3.3"
+  }
+}

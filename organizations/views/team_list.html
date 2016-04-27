@@ -1,0 +1,40 @@
+<!-- File: chapter10/routing-example/app/views/teams_list.html -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            Search: <input type="text" placeholder="search term" ng-model="searchText"/>
+            <br/>
+
+            <table id="projects" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Organization</th>
+
+                    <th>Role</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organization'">
+                    <td><p class="hangingindent"><b>{{org.organization}}:</b> {{org.whatdotheydo}}</p></td>
+                    <td>{{org.status}}</td>
+                    <td>
+                        <a title="{{org.organization}}"
+                           ng-href="#/team/{{org.id}}">
+                            <span class="glyphicon glyphicon-info-sign"></span></a>
+
+                        <span ng-if="org.show_interview > 0">
+                            &nbsp;&nbsp;
+                            <a title="Interview with {{org.name}} or {{org.organization}}"
+                           ng-href="/interviews/{{org.linktogithubinterview}}"><span
+                                class="glyphicon glyphicon-open-file"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
