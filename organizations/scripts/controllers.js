@@ -19,8 +19,12 @@ angular.module('fifaApp')
 
             FifaService.getTeams(function (resp) {
                 self.orgs = resp;
+                self.tags = FifaService.getTags();
+                self.types = FifaService.getTypes();
 
             });
+
+
         }])
 
     .filter('searchOrgs', function() {

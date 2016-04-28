@@ -3,6 +3,10 @@ angular.module('fifaApp')
     .factory('FifaService', ['$rootScope',
         function ($rootScope) {
             var organizations = [];
+            var tags = [];
+            var types = [];
+
+
             return {
 
                 getTeams: function (callback) {
@@ -20,9 +24,36 @@ angular.module('fifaApp')
 
                                             organizations[i] = data[i];
                                             organizations[i].id = i;
+
+                                            tag = data[i].tags;
+
+                                            if ( tag.length > 0 ) {
+                                                parts = tag.split(';');
+
+                                                for ( k = 0; k < parts.length; k++ ) {
+                                                    part = parts[k].trim();
+                                                    if ( !( part in tags)) {
+                                                        var tag_obj = {};
+                                                        tag_obj['name'] = part;
+                                                        tags [part] = tag_obj;
+                                                    }
+                                                }
+                                            }
+
+                                            type = data[i].typeofentity;
+
+                                            if ( type.length > 0 ) {
+                                                if ( !( type in types)) {
+                                                    var type_obj = {};
+                                                    type_obj['name'] = type;
+                                                    types[type] = type_obj;
+                                                }
+                                            }
                                         }
                                     }
 
+                                    console.dir(types);
+                                   // console.dir(types);
                                     callback(organizations);
                                 });
                             }
@@ -30,9 +61,17 @@ angular.module('fifaApp')
                     });
                 },
                 getTeamDetails: function (code) {
-console.dir(organizations[code]);
                     return organizations[code];
-                    // return $http.get('/api/team/' + code);
+                },
+                getTags: function () {
+                    console.log('getTags');
+                    console.dir(tags);
+                    return tags;
+                },
+                getTypes: function () {
+                    console.log('getTypes');
+                    console.dir(types);
+                    return types;
                 }
             }
         }])
