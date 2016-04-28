@@ -9,7 +9,7 @@ Vacant properties range anywhere from empty fields to large three story homes ne
 ### GOALS
 
 
-1. __Asset Mapping__ - Cataloging the various resources/efforts in our community related to the abandoned housing issue and the data that is being collected and shared. 
+1. __Asset Mapping__ - Cataloging the various resources and efforts in our community related to the abandoned housing issue and the data that is being collected and shared. 
 
 2. __Acquiring vacant properties__ - Create a guided map for the acquisition of vacant properties.  
 
