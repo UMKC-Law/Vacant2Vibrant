@@ -40,9 +40,10 @@ angular.module('fifaApp')
 
             // Using the angular.forEach method, go through the array of data and perform the operation of figuring out if the language is statically or dynamically typed.
             angular.forEach(input, function (org) {
-                if ( org.name.toLowerCase().indexOf(lowerStr) != -1
-                || org.organization.toLowerCase().indexOf(lowerStr) != -1
-                || org.whatdotheydo.toLowerCase().indexOf(lowerStr) != -1) {
+                if ( org.organizationname.toLowerCase().indexOf(lowerStr) != -1
+                    || org.descriptionoforganizationorinitiative.toLowerCase().indexOf(lowerStr) != -1
+                    || org.typeofentity.toLowerCase().indexOf(lowerStr) != -1
+                    || org.tags.toLowerCase().indexOf(lowerStr) != -1) {
                     out.push(org)
                 }
 

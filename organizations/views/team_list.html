@@ -9,7 +9,7 @@
                 <thead>
                 <tr>
                     <th>Organization</th>
-
+                    <th>Type</th>
                     <th>Role</th>
                     <th></th>
                 </tr>
@@ -17,6 +17,7 @@
                 <tbody>
                 <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organizationname'">
                     <td><p class="hangingindent"><b>{{org.organizationname}}:</b> {{org.descriptionoforganizationorinitiative}}</p></td>
+                    <td>{{org.typeofentity}}</td>
                     <td>{{org.tags}}</td>
                     <td>
                         <a title="{{org.organizationname}}"
