@@ -35,7 +35,7 @@ angular.module('fifaApp')
                                                     if ( !( part in tags)) {
                                                         var tag_obj = {};
                                                         tag_obj['name'] = part;
-                                                        tags [part] = tag_obj;
+                                                        tags[part] = tag_obj;
                                                     }
                                                 }
                                             }
@@ -52,9 +52,7 @@ angular.module('fifaApp')
                                         }
                                     }
 
-                                    console.dir(types);
-                                   // console.dir(types);
-                                    callback(organizations);
+                                    callback(organizations, tags, types);
                                 });
                             }
                         }
@@ -62,16 +60,6 @@ angular.module('fifaApp')
                 },
                 getTeamDetails: function (code) {
                     return organizations[code];
-                },
-                getTags: function () {
-                    console.log('getTags');
-                    console.dir(tags);
-                    return tags;
-                },
-                getTypes: function () {
-                    console.log('getTypes');
-                    console.dir(types);
-                    return types;
                 }
             }
         }])

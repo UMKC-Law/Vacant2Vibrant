@@ -16,11 +16,15 @@ angular.module('fifaApp')
         function (FifaService) {
             var self = this;
             self.orgs = [];
+            self.tags = [];
+            self.types = [];
 
-            FifaService.getTeams(function (resp) {
+
+            FifaService.getTeams(function (resp, tags, types) {
                 self.orgs = resp;
-                self.tags = FifaService.getTags();
-                self.types = FifaService.getTypes();
+                self.tags = tags;
+                self.types = types;
+
 
             });
 
