@@ -30,7 +30,7 @@ angular.module('fifaApp')
                     });
                 },
                 getTeamDetails: function (code) {
-
+console.dir(organizations[code]);
                     return organizations[code];
                     // return $http.get('/api/team/' + code);
                 }

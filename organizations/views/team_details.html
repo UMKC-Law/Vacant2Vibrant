@@ -10,6 +10,56 @@
                 <div class="col-md-9">
                     <p>{{teamDetailsCtrl.org.organizationname}}</p>
                 </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">WebSite:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        <a href="{{teamDetailsCtrl.org.organizationwebsite}}">{{teamDetailsCtrl.org.organizationwebsite}}</a>&nbsp;
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Description:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.descriptionoforganizationorinitiative}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Tags:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.tags}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Type:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.typeofentity}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Additional:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.additionalinformation}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Overlaps:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.whatoverlapsexist}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Partners:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.whatorginzationsdoyoupartnerwithorganizationnameandwebsite}}&nbsp;</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Who else should we talk to:</p>
+                </div>
+                <div class="col-md-9">
+                    <p>{{teamDetailsCtrl.org.whoelseshouldwetalkto}}&nbsp;</p>
+                </div>
             </div>
         </div>
 
@@ -20,8 +70,37 @@
                     <p class="text-right" style="color: gray">Contact:</p>
                 </div>
                 <div class="col-md-9">
-                    <p>{{teamDetailsCtrl.org.nameofcontactperson}}&nbsp;</p>
+                    <p>
+                        {{teamDetailsCtrl.org.nameofcontactperson}}&nbsp;
+                        <span ng-if="teamDetailsCtrl.org.roletitle.length > 0"><br/>{{teamDetailsCtrl.org.roletitle}}</span>
+                        <span ng-if="teamDetailsCtrl.org.streetaddress.length > 0"><br/>{{teamDetailsCtrl.org.streetaddress}}</span>
+                        <span ng-if="teamDetailsCtrl.org.city.length > 0"><br/>{{teamDetailsCtrl.org.city}}</span>
+                        <span ng-if="teamDetailsCtrl.org.state.length > 0"> {{teamDetailsCtrl.org.state}}</span>
+                        <span ng-if="teamDetailsCtrl.org.zip.length > 0"> {{teamDetailsCtrl.org.zip}}</span>
+                    </p>
                 </div>
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Data Significance:</p>
+                </div>
+                <div class="col-md-9">
+                    <p">{{teamDetailsCtrl.org.datasignificance}}&nbsp;</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Sharable Data:</p>
+                </div>
+                <div class="col-md-9">
+                    <p">{{teamDetailsCtrl.org.whatdatacanyoushare}}&nbsp;</p>
+                </div>
+
+
+                <div class="col-md-3">
+                    <p class="text-right" style="color: gray">Resources Needed:</p>
+                </div>
+                <div class="col-md-9">
+                    <p">{{teamDetailsCtrl.org.whatresourcesdoyouwant}}&nbsp;</p>
+                </div>
+
 
             </div>
         </div>
