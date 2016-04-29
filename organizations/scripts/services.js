@@ -36,10 +36,11 @@ angular.module('fifaApp')
 
                                                 for ( k = 0; k < parts.length; k++ ) {
                                                     part = parts[k].trim();
-                                                    if ( !( part in tags)) {
-                                                        var tag_obj = {};
-                                                        tag_obj['name'] = part;
-                                                        tags[part] = tag_obj;
+                                                    if ( '' == tags.filterObjects("text", part)) {
+                                                        var obj = {};
+                                                        obj['value'] = part;;
+                                                        obj['text'] = part;
+                                                        tags.push(obj);
                                                     }
                                                 }
                                             }
@@ -48,18 +49,16 @@ angular.module('fifaApp')
 
                                             if ( type.length > 0 ) {
 
-                                                if ( '' == types.filterObjects("name", type)) {
-                                                    var type_obj = {};
-                                                    type_obj['name'] = type;
-                                                    types.push(type_obj);
+                                                if ( '' == types.filterObjects("text", type)) {
+                                                    var obj = {};
+                                                    obj['value'] = type;
+                                                    obj['text'] = type;
+                                                    types.push(obj);
                                                 }
                                             }
                                         }
                                     }
-                                     ts = [ {name: 'paul'}, {name: 'barham'}];
 
-                                    console.dir(types);
-                                    console.dir(ts);
                                     callback(organizations, tags, types);
                                 });
                             }

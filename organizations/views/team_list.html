@@ -2,23 +2,22 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            {{ console.dir(teamListCtrl.types); }}
+
+            Search: <input type="text" ng-model="searchText" placeholder="search term"/>
+
             <!--- http://www.undefinednull.com/2014/08/11/a-brief-walk-through-of-the-ng-options-in-angularjs/ -->
-            <table id="types" class="table table-striped">
-                <thead>
-                <tr>
-                    <th>name</th>
 
-                </tr>
-                </thead>
-                <tbody>
-                <tr ng-repeat="type in teamListCtrl.types">
+            <p>selected Type is : {{selectedTypes}}</p>
 
-                    <td>1 - {{type['name']}}</td><td>{{type.name}}</td>
-                </tr>
-                </tbody>
+            <select ng-model="selectedTypes" ng-options="type.value as type.text for type in teamListCtrl.types">
+                <option value="">All Types</option>
+            </select>
 
-            </table>
+            <p>selected Tag is : {{selectedTags}}</p>
+
+            <select ng-model="selectedTags" ng-options="tag.value as tag.text for tag in teamListCtrl.tags">
+                <option value="">All Types</option>
+            </select>
 
 
 
@@ -34,7 +33,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organizationname'">
+                <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText:selectedTags:selectedTypes | orderBy: 'organizationname'">
                     <td><p class="hangingindent"><b>{{org.organizationname}}:</b> {{org.descriptionoforganizationorinitiative}}</p></td>
                     <td>{{org.typeofentity}}</td>
                     <td>{{org.tags}}</td>

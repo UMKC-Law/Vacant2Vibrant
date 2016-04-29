@@ -24,39 +24,49 @@ angular.module('fifaApp')
                 self.orgs = resp;
                 self.tags = tags;
                 self.types = types;
-
-                console.dir(self.orgs);
-                console.dir(self.tags);
-                console.dir(self.types);
-
-
-
             });
-
 
         }])
 
     .filter('searchOrgs', function() {
 
         // Create the return function and set the required parameter as well as an optional paramater
-        return function(input, str) {
-
-            if ( str == undefined ) {           // If there is not input
+        return function(input, str, tag, type) {
+console.log(str + "|" + tag + "|" + type + "|");
+            if ( str == undefined
+            && tag == undefined
+            && type == undefined ) {           // If there is not input
                 return input;
             }
 
             var out = [];
 
-            var regex = new RegExp( str , "i");
+      //      var regex = new RegExp( str , "i");
 
-            var lowerStr = str.toLowerCase();
+            if ( str != undefined ) {
+                var lowerStr = str.toLowerCase();
+            }
 
             // Using the angular.forEach method, go through the array of data and perform the operation of figuring out if the language is statically or dynamically typed.
             angular.forEach(input, function (org) {
-                if ( org.organizationname.toLowerCase().indexOf(lowerStr) != -1
-                    || org.descriptionoforganizationorinitiative.toLowerCase().indexOf(lowerStr) != -1
-                    || org.typeofentity.toLowerCase().indexOf(lowerStr) != -1
-                    || org.tags.toLowerCase().indexOf(lowerStr) != -1) {
+                var hit = false;
+                if ( str != undefined
+                    && (org.organizationname.toLowerCase().indexOf(lowerStr) != -1
+                    || org.descriptionoforganizationorinitiative.toLowerCase().indexOf(lowerStr) != -1)) {
+
+                    hit=true;
+                }
+
+                if ( type != undefined && org.typeofentity.toLowerCase() == type.toLowerCase() ) {
+                    hit = true;
+                }
+
+                if ( tag != undefined && org.tags.toLowerCase() == tag.toLowerCase()) {
+                    hit = true;
+                }
+
+                console.log( "hit=|" + hit + "|");
+                if (hit) {
                     out.push(org)
                 }
 
