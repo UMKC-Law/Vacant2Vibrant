@@ -1,26 +1,27 @@
 <!-- File: chapter10/routing-example/app/views/teams_list.html -->
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-
+        <div class="col-md-12" style="text-align: right">
+            <br/>
             Search: <input type="text" ng-model="searchText" placeholder="search term"/>
 
+            &nbsp; &nbsp;
             <!--- http://www.undefinednull.com/2014/08/11/a-brief-walk-through-of-the-ng-options-in-angularjs/ -->
-
-            <p>selected Type is : {{selectedTypes}}</p>
 
             <select ng-model="selectedTypes" ng-options="type.value as type.text for type in teamListCtrl.types">
                 <option value="">All Types</option>
             </select>
 
-            <p>selected Tag is : {{selectedTags}}</p>
+            &nbsp; &nbsp;
 
             <select ng-model="selectedTags" ng-options="tag.value as tag.text for tag in teamListCtrl.tags">
                 <option value="">All Tags</option>
             </select>
+        </div>
+    </div>
 
-
-
+    <div class="row">
+        <div class="col-md-12">
             <br/>
 
             <table id="projects" class="table table-striped">
@@ -34,7 +35,8 @@
                 </thead>
                 <tbody>
                 <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText:selectedTags:selectedTypes | orderBy: 'organizationname'">
-                    <td><p class="hangingindent"><b>{{org.organizationname}}:</b> {{org.descriptionoforganizationorinitiative}}</p></td>
+                    <td><p class="hangingindent"><b>{{org.organizationname}}:</b>
+                        {{org.descriptionoforganizationorinitiative}}</p></td>
                     <td>{{org.typeofentity}}</td>
                     <td>{{org.tags}}</td>
                     <td>
@@ -45,8 +47,8 @@
                         <span ng-if="org.show_interview > 0">
                             &nbsp;&nbsp;
                             <a title="Interview with {{org.name}} or {{org.organizationname}}"
-                           ng-href="/interviews/{{org.linktogithubinterview}}"><span
-                                class="glyphicon glyphicon-open-file"></span></a>
+                               ng-href="/interviews/{{org.linktogithubinterview}}"><span
+                                    class="glyphicon glyphicon-open-file"></span></a>
                         </span>
                     </td>
                 </tr>
