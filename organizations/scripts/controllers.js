@@ -28,47 +28,79 @@ angular.module('fifaApp')
 
         }])
 
-    .filter('searchOrgs', function() {
+    .filter('searchOrgs', function () {
 
         // Create the return function and set the required parameter as well as an optional paramater
-        return function(input, str, tag, type) {
-console.log(str + "|" + tag + "|" + type + "|");
-            if ( str == undefined
-            && tag == undefined
-            && type == undefined ) {           // If there is not input
+        return function (input, str, tag, type) {
+
+            if (str == undefined
+                && tag == undefined
+                && type == undefined) {           // If there is not input
                 return input;
             }
 
             var out = [];
 
-      //      var regex = new RegExp( str , "i");
+            //      var regex = new RegExp( str , "i");
 
-            if ( str != undefined ) {
-                var lowerStr = str.toLowerCase();
+            var lowerStr = "";
+            if (str != undefined) {
+                lowerStr = str.toLowerCase();
+            } else {
+                lowerStr = '';
+            }
+
+
+            var lowerType = "";
+            if (type != undefined) {
+                lowerType = type.toLowerCase();
+            } else {
+                lowerType = "";
+            }
+
+            var lowerTag = "";
+            if (tag != undefined) {
+                lowerTag = tag.toLowerCase();
+            } else {
+                lowerTag = "";
+            }
+
+            if (lowerTag == 'na') {
+                lowerTag = '';
             }
 
             // Using the angular.forEach method, go through the array of data and perform the operation of figuring out if the language is statically or dynamically typed.
             angular.forEach(input, function (org) {
-                var hit = false;
-                if ( str != undefined
-                    && (org.organizationname.toLowerCase().indexOf(lowerStr) != -1
-                    || org.descriptionoforganizationorinitiative.toLowerCase().indexOf(lowerStr) != -1)) {
 
-                    hit=true;
+                var lower_type = org.typeofentity.toLowerCase();
+                var lower_tag = org.tags.toLowerCase();
+
+                var tag_matched = false;
+
+                parts = lower_tag.split(';');
+                for ( k = 0; k < parts.length; k++ ) {
+                    part = parts[k].trim();
+                    if ( lowerTag == part ) {
+                        tag_matched = true;
+                        break;
+                    }
                 }
 
-                if ( type != undefined && org.typeofentity.toLowerCase() == type.toLowerCase() ) {
-                    hit = true;
+                if (
+
+                    ( lowerStr == ""
+                    || (org.organizationname.toLowerCase().indexOf(lowerStr) != -1
+                    || org.descriptionoforganizationorinitiative.toLowerCase().indexOf(lowerStr) != -1))
+
+                    && ( lowerType == "" || lower_type == lowerType)
+
+                    && ( lowerTag == "" || tag_matched)
+
+
+                ) {
+                    out.push(org);
                 }
 
-                if ( tag != undefined && org.tags.toLowerCase() == tag.toLowerCase()) {
-                    hit = true;
-                }
-
-                console.log( "hit=|" + hit + "|");
-                if (hit) {
-                    out.push(org)
-                }
 
             });
 
@@ -97,9 +129,9 @@ console.log(str + "|" + tag + "|" + type + "|");
                 var self = this;
                 self.team = {};
                 data = FifaService.getTeamDetails($routeParams.code);
-                console.dir( data);
+                console.dir(data);
 
-                if ( data.whatoverlapsexist.lenght < 1 ) {
+                if (data.whatoverlapsexist.lenght < 1) {
                     data.whatoverlapsexist = 'paul';
                 }
                 self.org = data;

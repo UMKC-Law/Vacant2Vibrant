@@ -16,7 +16,7 @@
             <p>selected Tag is : {{selectedTags}}</p>
 
             <select ng-model="selectedTags" ng-options="tag.value as tag.text for tag in teamListCtrl.tags">
-                <option value="">All Types</option>
+                <option value="">All Tags</option>
             </select>
 
 
@@ -28,7 +28,7 @@
                 <tr>
                     <th>Organization</th>
                     <th>Type</th>
-                    <th>Role</th>
+                    <th>Tags</th>
                     <th></th>
                 </tr>
                 </thead>

@@ -31,7 +31,7 @@ angular.module('fifaApp')
 
                                             tag = data[i].tags;
 
-                                            if ( tag.length > 0 ) {
+                                            if ( tag.trim().length > 0 ) {
                                                 parts = tag.split(';');
 
                                                 for ( k = 0; k < parts.length; k++ ) {
@@ -47,7 +47,7 @@ angular.module('fifaApp')
 
                                             type = data[i].typeofentity;
 
-                                            if ( type.length > 0 ) {
+                                            if ( type.trim().length > 0) {
 
                                                 if ( '' == types.filterObjects("text", type)) {
                                                     var obj = {};
@@ -58,6 +58,34 @@ angular.module('fifaApp')
                                             }
                                         }
                                     }
+
+                                    types.sort(function(a,b){
+
+                                        if (a.text > b.text) {
+                                            return 1;
+                                        } else {
+                                            if (a.text == b.text ) {
+                                                return 0;
+                                            } else {
+                                                return -1;
+                                            }
+                                        }
+
+                                    })
+
+                                    tags.sort(function(a,b){
+
+                                        if (a.text > b.text) {
+                                            return 1;
+                                        } else {
+                                            if (a.text == b.text ) {
+                                                return 0;
+                                            } else {
+                                                return -1;
+                                            }
+                                        }
+
+                                    })
 
                                     callback(organizations, tags, types);
                                 });
