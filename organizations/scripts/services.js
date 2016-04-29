@@ -6,6 +6,10 @@ angular.module('fifaApp')
             var tags = [];
             var types = [];
 
+            Array.prototype.filterObjects = function(key, value) {
+                return this.filter(function(x) { return x[key] === value; })
+            }
+
 
             return {
 
@@ -43,15 +47,19 @@ angular.module('fifaApp')
                                             type = data[i].typeofentity;
 
                                             if ( type.length > 0 ) {
-                                                if ( !( type in types)) {
+
+                                                if ( '' == types.filterObjects("name", type)) {
                                                     var type_obj = {};
                                                     type_obj['name'] = type;
-                                                    types[type] = type_obj;
+                                                    types.push(type_obj);
                                                 }
                                             }
                                         }
                                     }
+                                     ts = [ {name: 'paul'}, {name: 'barham'}];
 
+                                    console.dir(types);
+                                    console.dir(ts);
                                     callback(organizations, tags, types);
                                 });
                             }

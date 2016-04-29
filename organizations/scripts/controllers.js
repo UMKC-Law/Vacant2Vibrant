@@ -25,6 +25,11 @@ angular.module('fifaApp')
                 self.tags = tags;
                 self.types = types;
 
+                console.dir(self.orgs);
+                console.dir(self.tags);
+                console.dir(self.types);
+
+
 
             });
 
