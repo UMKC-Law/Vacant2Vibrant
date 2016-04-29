@@ -17,7 +17,7 @@
                 <tbody>
                 <tr ng-repeat="org in teamListCtrl.orgs | searchOrgs:searchText | orderBy: 'organization'">
                     <td><p class="hangingindent"><b>{{org.organization}}:</b> {{org.whatdotheydo}}</p></td>
-                    <td>{{org.status}}</td>
+                    <td>{{org.roletitle}}</td>
                     <td>
                         <a title="{{org.organization}}"
                            ng-href="#/team/{{org.id}}">
