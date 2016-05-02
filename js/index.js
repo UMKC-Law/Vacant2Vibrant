@@ -137,6 +137,22 @@ $(document).ready(function () {
                 result.append("<p>Owner: " + parcel.county_owner + ", " + parcel.county_owner_city + " " + parcel.county_owner_state + " </p>");
                 result.append("<p>KIVA Pin: " + parcel.city_id + "   County APN: " + parcel.county_parcel_number + " </p>");
 
+                // longitude, latitude if not found 0.0000000000
+                // census_longitude, census_latitude
+
+                var longitude = 0.0000000000;
+                var latitude = 0.0000000000;
+
+                if (parcel.longitude != 0.0000000000) {             // KCMO has best
+                    longitude = parcel.longitude;
+                    latitude = parcel.latitude;
+                } else if ( parcel.census_longitude != 0.0000000000) {     // Census is next
+                    longitude = parcel.census_longitude;
+                    latitude = parcel.census_latitude;
+                }
+
+                result.append("<p><a href=\"/research.html?cid=" + parcel.city_id + "&lng=" + longitude + "&lat=" + latitude + "\"><b>Research</b></a> this property.</p>");
+
 
             })
             .fail(function () {
