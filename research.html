@@ -16,27 +16,72 @@ custom_js:
 
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Property Violations within 500 feet</h2>
-            <table id="cases" class="table table-striped">
-                <thead>
-                <tr>
+    <div id="exTab1" class="container">
+        <ul class="nav nav-pills">
+            <li class="active">
+                <a href="#prop" data-toggle="tab">Property Violations</a>
+            </li>
+            <li class="">
+                <a href="#three" data-toggle="tab">311</a>
+            </li>
+            <li class="">
+                <a href="#business" data-toggle="tab">Business</a>
+            </li>
+        </ul>
+        <div class="tab-content clearfix">
+            <div class="tab-pane active" id="prop">
+                <h3>Property Violations within 500 feet</h3>
+                <table id="cases" class="table table-striped">
+                    <thead>
+                    <tr>
 
-                    <th>Opened</th>
-                    <th>Address</th>
-                    <th>Violation</th>
-                    <th>Ordinance</th>
-                    <th>Closed</th>
-                    <th>Status</th>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+                        <th>Opened</th>
+                        <th>Address</th>
+                        <th>Violation</th>
+                        <th>Ordinance</th>
+                        <th>Closed</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane" id="three">
+                <h3>311</h3>
+                <table id="cases311" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Address</th>
+                        <th>Department</th>
+                        <th>Request Type</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane" id="business">
+                <h3>Business</h3>
+                <table id="cases_business" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Address</th>
+                        <th>Department</th>
+                        <th>Request Type</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+
     </div>
 
 </div>
-
-

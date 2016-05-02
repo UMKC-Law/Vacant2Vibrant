@@ -39,14 +39,9 @@ $(document).ready(function () {
 
         .done(function (data) {
             address_obj = jQuery.parseJSON(data);
-            console.log(address_obj);
 
-            console.log("id=" + address_obj.data.id);
 
             var parcel = address_obj.data;
-            console.dir(parcel);
-
-            console.log("|" + parcel.land_bank_property + "|");
 
             var result = $("#address-results");
             result.empty();
@@ -107,7 +102,7 @@ $(document).ready(function () {
                         var row = '';
 
                         closed = data[i]['case_closed'];
-                        console.log(closed);
+
                         if (typeof closed == 'undefined') {
                             closed = '';
                         } else {
@@ -125,6 +120,91 @@ $(document).ready(function () {
                         $('#cases > tbody:last').append(row);
 
                     }
+
+                    // ==================================
+                    //           311
+                    // ==================================
+                    var request_311 = createCORSRequest("get", "http://data.kcmo.org/resource/7at3-sxhp.json?$where=within_circle(address_with_geocode," + latitude + "," + longitude + ",152.4)");
+                    if (request_311) {
+                        request_311.onload = function () {
+                            var data = JSON.parse(request_311.responseText);
+                            console.dir(data);
+                            data.sort(function (a, b) {
+                                if (a.creation_date < b.creation_date) {
+                                    return 1;
+                                }
+                                if (a.creation_date > b.creation_date) {
+                                    return -1;
+                                }
+                                // a must be equal to b
+                                return 0;
+                            });
+                            for (var i in data) {
+                                var row = '';
+                                row += '<tr>';
+                                row += '<td>' + data[i]['creation_date'] + '</td>';
+                                row += '<td>' + data[i]['street_address'] + '</td>';
+                                row += '<td>' + data[i]['department'] + '</td>';
+                                row += '<td>' + data[i]['request_type'] + '</td>';
+                                row += '<td>' + data[i]['status'] + '</td>';
+                                row += '</tr>';
+
+                                $('#cases311 > tbody:last').append(row);
+
+
+
+                            }
+
+                            // ==================================
+                            //           Business
+                            // ==================================
+                            var request_business = createCORSRequest("get", "http://data.kcmo.org/resource/pnm4-68wg.json?$where=within_circle(location_1," + latitude + "," + longitude + ",152.4)");
+                            if (request_business) {
+                                request_business.onload = function () {
+                                    var data = JSON.parse(request_business.responseText);
+                                    console.dir(data);
+                                    data.sort(function (a, b) {
+                                        if (a.valid_license_for < b.valid_license_for) {
+                                            return 1;
+                                        }
+                                        if (a.valid_license_for > b.valid_license_for) {
+                                            return -1;
+                                        }
+                                        // a must be equal to b
+                                        return 0;
+                                    });
+                                    for (var i in data) {
+                                        var row = '';
+                                        row += '<tr>';
+                                        row += '<td>' + data[i]['valid_license_for'] + '</td>';
+                                        row += '<td>' + data[i]['business_name'] + ' ' + data[i]['dba_name'] + '</td>';
+                                        row += '<td>' + data[i]['business_type'] + '</td>';
+                                        row += '<td>' + data[i]['address'] + '</td>';
+                                        row += '<td></td>';
+                                        row += '</tr>';
+
+                                        $('#cases_business > tbody:last').append(row);
+
+
+                                    }
+
+                                    // ==================================
+                                    //           Business
+                                    // ==================================
+
+
+                                };
+                                request_business.send();
+                            }
+
+                        };
+                        request_311.send();
+                    }
+
+
+
+
+
                 };
                 request_property_violations.send();
             }
