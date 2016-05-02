@@ -128,7 +128,6 @@ $(document).ready(function () {
                     if (request_311) {
                         request_311.onload = function () {
                             var data = JSON.parse(request_311.responseText);
-                            console.dir(data);
                             data.sort(function (a, b) {
                                 if (a.creation_date < b.creation_date) {
                                     return 1;
@@ -142,7 +141,7 @@ $(document).ready(function () {
                             for (var i in data) {
                                 var row = '';
                                 row += '<tr>';
-                                row += '<td>' + data[i]['creation_date'] + '</td>';
+                                row += '<td>' + data[i]['creation_date'].substring(0,10) + '</td>';
                                 row += '<td>' + data[i]['street_address'] + '</td>';
                                 row += '<td>' + data[i]['department'] + '</td>';
                                 row += '<td>' + data[i]['request_type'] + '</td>';
@@ -162,7 +161,6 @@ $(document).ready(function () {
                             if (request_business) {
                                 request_business.onload = function () {
                                     var data = JSON.parse(request_business.responseText);
-                                    console.dir(data);
                                     data.sort(function (a, b) {
                                         if (a.valid_license_for < b.valid_license_for) {
                                             return 1;
@@ -176,10 +174,11 @@ $(document).ready(function () {
                                     for (var i in data) {
                                         var row = '';
                                         row += '<tr>';
-                                        row += '<td>' + data[i]['valid_license_for'] + '</td>';
+                                        row += '<td>' + data[i]['valid_license_for'].substring(0,10) + '</td>';
+                                        row += '<td>' + data[i]['address'] + '</td>';
                                         row += '<td>' + data[i]['business_name'] + ' ' + data[i]['dba_name'] + '</td>';
                                         row += '<td>' + data[i]['business_type'] + '</td>';
-                                        row += '<td>' + data[i]['address'] + '</td>';
+
                                         row += '<td></td>';
                                         row += '</tr>';
 
@@ -189,8 +188,43 @@ $(document).ready(function () {
                                     }
 
                                     // ==================================
-                                    //           Business
+                                    //           Crime
                                     // ==================================
+                                    var request_crime = createCORSRequest("get", "http://data.kcmo.org/resource/kbzx-7ehe.json?$where=within_circle(location_1," + latitude + "," + longitude + ",152.4)");
+                                    if (request_crime) {
+                                        request_crime.onload = function () {
+                                            var data = JSON.parse(request_crime.responseText);
+                                            console.dir(data);
+                                            data.sort(function (a, b) {
+                                                if (a.reported_date < b.reported_date) {
+                                                    return 1;
+                                                }
+                                                if (a.reported_date > b.reported_date) {
+                                                    return -1;
+                                                }
+                                                // a must be equal to b
+                                                return 0;
+                                            });
+                                            for (var i in data) {
+                                                var row = '';
+                                                row += '<tr>';
+                                                row += '<td>' + data[i]['reported_date'].substring(0,10) + ' ' + data[i]['reported_time'] + '</td>';
+                                                row += '<td>' + data[i]['address'] + '</td>';
+                                                row += '<td>' + data[i]['description'] + '</td>';
+                                                row += '<td>' + data[i]['age_1'] + ', ' + data[i]['sex_1'] + ', ' + data[i]['race_1'] + '</td>';
+                                                row += '<td>' + data[i]['firearm_used_flag'] + '</td>';
+                                                row += '<td></td>';
+                                                row += '</tr>';
+
+                                                $('#cases_crime > tbody:last').append(row);
+
+
+                                            }
+
+
+                                        };
+                                        request_crime.send();
+                                    }
 
 
                                 };
